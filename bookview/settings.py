@@ -142,9 +142,9 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_THROTTLE_RATES': {
         'anon': '10/day',
-        'review-create': '10/day',
+        'review-create': '100/day',
         'review-list': '100/day',
-        'review-detail': '5/day'
+        'review-detail': '100/day'
     },
     'DEFAULT_FILTER_BACKENDS': [
         'django_filters.rest_framework.DjangoFilterBackend'
